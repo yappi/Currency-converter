@@ -1,0 +1,15 @@
+﻿<Window x:Class="CurrencyConverter.Error"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyConverter"
+        mc:Ignorable="d"
+        Title="Error" Height="100" Width="350">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="38,10,0,0" TextWrapping="Wrap" Text="You have no internet connection." VerticalAlignment="Top" Width="276"/>
+        <Button Content="Cancel" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="257,39,0,0" Click="Cancel"/>
+        <Button Content="Try again" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" RenderTransformOrigin="2.487,2.7" Margin="178,39,0,0" Click="TryAgain"/>
+
+    </Grid>
+</Window>

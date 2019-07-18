@@ -1,0 +1,35 @@
+﻿<Window x:Class="CurrencyConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CurrencyConverter"
+        mc:Ignorable="d"
+        Title="Currency Converter" Height="93.333" Width="580.333">
+
+    <Grid Margin="0,0,2,0" Height="60" VerticalAlignment="Top">
+        <!--<Label Content="UAH:" Margin="10,10,503,35" />
+        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="47,10,0,0" Name ="InputValue" TextChanged="InputValue_TextChanged"/>
+        <TextBox IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="209,10,0,0" Name ="UsdOutPutValue"/>
+        <Label Content="USD:" Margin="172,10,306,35" />
+        <TextBox IsReadOnly="True" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="376,10,0,0" Name ="OutPutValue"/>
+        <Label Content="USD:" Margin="334,10,144,35" />-->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="35*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox HorizontalAlignment="Left" VerticalAlignment="Center"  Width="120" Grid.Column="1" Name ="InputValue" TextChanged="InputValue_TextChanged" PreviewTextInput="NumberValidationTextBox" Margin="0,16,0,5" Height="18"/>
+        <TextBox IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="120" Grid.Column="3" Name ="UsdOutputValue" Margin="0,16,0,5" Height="18"/>
+        <TextBox IsReadOnly="True" HorizontalAlignment="Left" VerticalAlignment="Center"  Width="120" Grid.Column="5" Name ="EurOutputValue" Margin="0,16,0,5" Height="18"/>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Content="UAH:" Margin="0,8,0,5" Height="26" Width="37"/>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="2" Content="USD:" Margin="0,8,0,5" Height="26" Width="36"/>
+        <Label HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="4" Content="EUR:" Margin="0,8,0,5" Height="26" Width="34"/>
+    </Grid>
+</Window>
